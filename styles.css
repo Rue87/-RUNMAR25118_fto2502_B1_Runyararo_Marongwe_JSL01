@@ -13,7 +13,8 @@
   .kanban-container{
     display: flex;
     flex-direction: row;
-    height:100vh;
+    height: 1024px;
+    width: 1440px;
   }
   .kanban-column{
     background-color:#FFFFFF;
@@ -45,10 +46,11 @@
     top: 34px;
     border-top-right-radius:100px;
     border-bottom-right-radius: 100px;
-    color: #635FC7;
+    background-color: #635FC7;
     margin-top: 19px;
     margin-right: 24px;
   }
+  
 
   .text-style{
     font-weight: 700;
@@ -75,12 +77,9 @@
     color: #000112;
 
   }
-
-
-  .task-columns{
+.task-columns{
     background-color: #F4F7FD;
-    height: 928px;
-    border-radius: 8px;
+    height: 100%;
     margin-left: 0px;
     margin-top: 0px;
     padding: 24px;
@@ -112,11 +111,11 @@
     gap: 20px;
     box-shadow: 0px 4px 6px 0px rgba(56, 78, 126, 0.1015)
   }
+
   .task-columns h3 {
-    margin-left: 2em;
-    position: relative; /* Position relative for the pseudo-element */
+    position: relative; 
+    padding-left: 25px; 
   }
-  
   /* Pseudo-element for the dot */
   .task-columns h3::before {
     content: "";
@@ -125,22 +124,161 @@
     height: 15px; /* Adjust size */
     border-radius: 50%;
     position: absolute;
-    top: 50%;
+    top:50%; 
+    left: 0;
     transform: translateY(-50%);
-
-  }
   
+  }
   /* Specific colors for each column */
   .todo4-column h3::before {
     background-color: #49C4E5;
     
-  }
-  
+    }
   .doing2-column h3::before {
     background-color: #8471F2;
   }
-  
   .done2-column h3::before {
     background-color: #67E2AE;
   }
+  .TODO{
+    margin-left: 0;
+  }
+  .DOING{
+    margin-left: 0;  
+  }
+  .DONE{
+    margin-left: 0;
+    
+  }
+  .mobile-logo {
+    display: none; /* hide by default (desktop) */
+  }
   
+/* Media query for mobile devices */
+
+
+@media (min-width: 320px) and (max-width:768px) {
+  .kanban-container {
+    flex-direction: column; /* Stack columns vertically */
+    height:auto; /* Adjust height to content */
+    width: 100%; 
+}
+
+  .kanban-column {
+    display: none; /* Hide the left navigation column */
+  }
+
+
+  .board-header {
+    display: flex; /* Flex to align items horizontally */
+    align-items: center; 
+    justify-content: flex-start;/* Vertically center the image and text */
+    background-color: #FFFFFF;
+    width: 375px;
+    height: 64px;
+    padding: 16px;
+    gap: 12px; /* Space between image and text */
+    margin-top: 21px;
+
+  }
+  .mobile-logo {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    margin: 20px 10px 19px 16px;
+    
+  }
+
+
+  .board-header h2 {
+    font-weight: 700;
+    font-size: 18px; /* Adjust font size */
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #000112;
+    margin-left: 16px; 
+    margin-top: 20px; 
+    margin-bottom: 16px; 
+    word-spacing: normal;
+  }
+  .task-columns-container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+  }
+  .task-columns {
+    background-color: #F4F7FD;
+    height: auto;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 16px;
+    display: flex;
+    flex-direction: column; /* Stack task columns */
+    align-items: center;
+    row-gap: 20px; /* Space between task columns */
+  }
+
+  .todo4-column,
+  .doing2-column {
+    width: 100%; 
+  }
+
+  .done2-column {
+    display: none; /* Hide the "Done" column */
+  }
+
+  .task-columns {
+    width: 100%; 
+  }
+
+  .task-columns h3 {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1px;
+    letter-spacing: 2.4px;
+    color: #828FA3;
+    margin-left: 0;
+    padding-left: 48px;
+    margin-top: 32px; 
+    margin-bottom:30px ;
+    padding-top: 20px;
+    padding-bottom: 21px;
+  }
+
+  .task-columns h3::before {
+    content: "";
+    display: inline-block;
+    width: 12px; 
+    height: 12px; 
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    margin-right: 12px;
+    margin-left: 23px;
+  }
+
+  .card {
+    background-color: white;
+    color: #000112;
+    width: 320px; /* Adjust card width with padding */
+    height: 60px; /* Adjust height to content */
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 15px;
+    font-weight: 700;
+    margin-right: 29px;
+    margin-left: 26px;
+    line-height: 100%;
+    gap: 20px;
+    box-shadow: 0px 4px 6px rgba(56, 78, 126, 0.1015);
+  }
+  .todo4-column {
+    margin-bottom: 10px; /* Reduce this value significantly */
+  }
+}
+
