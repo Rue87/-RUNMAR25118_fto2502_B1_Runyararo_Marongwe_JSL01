@@ -27,11 +27,9 @@ This project is a functional and visually organized web-based Kanban task manage
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/Rue87/YOUR_REPOSITORY_NAME.git]
-    cd YOUR_REPOSITORY_NAME
+    git clone [https://github.com/Rue87/RUNMAR25118_fto2502_B1_Runyararo_Marongwe_JSL01.git]
+    cd RUNMAR25118_fto2502_B1_Runyararo_Marongwe_JSL01.git
     ```
-    (Skip this step if you are working with local files only.)
-
 2.  **Open the `index.html` file in your web browser.**
 
 ## Usage Examples and Interaction (Static HTML/CSS)
@@ -47,8 +45,7 @@ As this version of the Kanban board is built with static HTML and CSS, the inter
 
 **Note:** The dynamic functionality of adding, moving, and managing tasks will be implemented in future iterations using JavaScript.
 
-
 ## Contact
 
-[Your Runyararo Marongwe/mrunya87@gmail.com]
+[Runyararo Marongwe/mrunya87@gmail.com]
 [https://github.com/Rue87]
