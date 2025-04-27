@@ -1,27 +1,54 @@
-# JSL01 Project Brief: Kanban Board UI Implementation
+# Kanban Task Management Board
 
-## Figma Design Link
+## Description
 
-Before starting this project, refer to the provided Figma design for layout, styling, and responsiveness details: [Figma Design](<https://www.figma.com/design/gNQuGWGGRATtjWrAVW8FTC/kanban-task-management-web-app-(Copy)?t=LCTJCuVbTtm8094H-0>)
+This project is a functional and visually organized web-based Kanban task management board built with HTML and CSS. It provides a user-friendly interface for categorizing and tracking tasks through different stages of a workflow (To Do, Doing, Done). The design is responsive, adapting to various screen sizes to ensure a consistent experience across devices. This project serves as a solid foundation for future JavaScript-based interactive enhancements.
 
-## Overview
+## Technologies Used
 
-This project involves developing a **visually accurate and fully responsive Kanban board** that aligns with the provided **Figma design**. The board should be structured into multiple columns and include task cards, a static side panel, and a well-defined theme to ensure a **professional and polished user experience.**
+* HTML (for structuring the web page)
+* CSS (for styling and layout, including responsive design with media queries)
 
-## Before You Begin
+## Features
 
-**Check the project user stories in your student dashboard** before you start building.
+### Created Features:
 
-## Key Objectives
+* **Task Creation (HTML Structure):** The HTML provides the structure for adding new tasks within the "To Do" column.
+* **Columnar Organization:** Tasks are logically grouped into "TODO," "DOING," and "DONE" columns using HTML sections.
+* **Static Task Representation:** The HTML includes sample task cards within each column to visually represent tasks.
+* **Responsive Design (CSS):** The CSS incorporates media queries to adapt the layout for different screen sizes, including mobile devices.
+* **Hidden Navigation (Mobile - CSS):** On smaller screens (up to 768px width), the left navigation sidebar is hidden using CSS.
+* **Top Board Header (Mobile - CSS):** A board header with a title and logo (for mobile) is displayed at the top on smaller screens.
+* **"Done" Column Hidden (Mobile - CSS):** The "DONE" column is initially hidden on mobile devices to focus on active tasks.
+* **Visual Indicators (CSS):** Colored dots are implemented using CSS pseudo-elements to visually distinguish each column.
+* **Custom Styling (CSS):** The project utilizes a custom font ('Plus Jakarta Sans') and a defined color scheme for a consistent and appealing visual presentation.
 
-- Implement a **favicon and page title** that match the application’s theme for a professional look.
-- Create a **Kanban board with multiple columns** (e.g., "To Do", "In Progress", "Done") that **exactly replicates** the Figma design layout.
-- Ensure the **board’s layout, colours, typography, and spacing** strictly follow the Figma specifications for visual consistency.
-- Develop a **fully responsive** board that adapts seamlessly to **both laptops and mobile devices**, mirroring the Figma design’s responsive behavior.
-- Display **tasks as individual cards** within their respective columns, ensuring their design (borders, shadows, padding) follows the Figma guidelines for clarity and appeal.
-- Include **titles on all task cards** to provide clear task descriptions.
-- Implement a **static side panel with** the correct **icons, text, and branding elements** as per the Figma layout for a structured and professional appearance.
+## Setup Instructions
 
-## Expected Outcome
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/Rue87/YOUR_REPOSITORY_NAME.git]
+    cd YOUR_REPOSITORY_NAME
+    ```
+    (Skip this step if you are working with local files only.)
 
-The final application will present a **visually cohesive, user-friendly, and responsive Kanban board** that aligns precisely with the provided Figma design. It will include **consistent styling**, **a well-structured layout, and intuitive task organization** to enhance usability across different devices.
+2.  **Open the `index.html` file in your web browser.**
+
+## Usage Examples and Interaction (Static HTML/CSS)
+
+As this version of the Kanban board is built with static HTML and CSS, the interaction is limited to viewing the pre-defined tasks and layout.
+
+1.  **Viewing the Board:** Upon opening `index.html`, you will see the Kanban board with the "TODO," "DOING," and "DONE" columns, each containing sample task cards.
+2.  **Mobile View:** If you open the `index.html` file on a device with a screen width of 768 pixels or less (or simulate this using your browser's developer tools), you will observe the responsive design:
+    * The left navigation sidebar will be hidden.
+    * A "Launch Career" header with a logo will appear at the top.
+    * The task columns will be stacked vertically.
+    * The "DONE" column will be initially hidden.
+
+**Note:** The dynamic functionality of adding, moving, and managing tasks will be implemented in future iterations using JavaScript.
+
+
+## Contact
+
+[Your Runyararo Marongwe/mrunya87@gmail.com]
+[https://github.com/Rue87]
